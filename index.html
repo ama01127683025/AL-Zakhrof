@@ -6,269 +6,300 @@
     <title>مصنع الزخرف للحديد | AL-Zakhrof Iron Factory</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- شريط التنقل العلوي -->
-    <header>
+    <!-- شريط التنقل العلوي   -->
+    <header class="header">
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="شعار مصنع الزخرف" id="logo-img">
-                <h1>AL-Zakhrof factory</h1>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="شعار مصنع الزخرف" class="logo" id="logo-placeholder">
+                <h1 class="company-name">AL-Zakhrof factory</h1>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#documents">الوثائق</a></li>
-                    <li><a href="#accreditation">الاعتمادات</a></li>
-                    <li><a href="#projects">مشاريعنا</a></li>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#documents" class="nav-link">الوثائق</a></li>
+                    <li><a href="#accreditation" class="nav-link">الاعتمادات</a></li>
+                    <li><a href="#projects" class="nav-link">مشاريعنا</a></li>
                 </ul>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
+            <div class="header-actions">
+                <div class="language-switcher">
+                    <span>AR</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- القسم الرئيسي -->
-    <main>
-        <!-- قسم من نحن -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2>من نحن</h2>
-                <div class="about-content">
-                    <div class="image-slider">
-                        <div class="slider-container">
-                            <img src="images/about/1.jpg" class="active">
-                            <img src="images/about/2.jpg" >
-                            <img src="images/about/3.jpg" >
-                            <img src="images/about/4.jpg" >
-                            <img src="images/about/5.jpg" >
-                            <img src="images/about/6.jpg" >
-                            <img src="images/about/7.jpg" >
-                            <img src="images/about/8.jpg" >
-                        </div>
-                        <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
-                        <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
-                    </div>
-                    <div class="about-text">
-                        <p>تأسس مصنع الزخرف للحديد في عام 1995، ونحن نفتخر بأننا من الرواد في مجال صناعة الحديد والمنتجات المعدنية في المنطقة. نقدم منتجات عالية الجودة تلبي أعلى المعايير الدولية.</p>
-                        <p>بخبرة تزيد عن ربع قرن، استطعنا بناء سمعة ممتازة في السوق المحلي والدولي، حيث نلتزم بالجودة والدقة في كل منتج نقدمه لعملائنا الكرام.</p>
-                    </div>
+    <!-- قسم الهيرو  -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero1.png');">
+                <div class="slide-content">
+                    <h2>الريادة في صناعة الحديد</h2>
+                    <p>جودة لا تضاهى وخبرة تزيد عن 25 عاماً في مجال الصناعات الحديدية</p>
+                    <a href="#about" class="btn btn-primary">تعرف علينا</a>
                 </div>
             </div>
-        </section>
+            <div class="slide" style="background-image: url('images/hero2.png');">
+                <div class="slide-content">
+                    <h2>حلول متكاملة للبناء</h2>
+                    <p>نقدم حلولاً مبتكرة تلبي احتياجات مشاريعك الكبرى</p>
+                    <a href="#about" class="btn btn-primary">تعرف علينا</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
 
-        <!-- قسم الوثائق -->
-        <section id="documents" class="section">
-            <div class="container">
-                <h2>الوثائق الرسمية</h2>
-                <div class="documents-slider">
+    <!-- قسم من نحن -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>من نحن</h2>
+            <div class="about-content">
+                <div class="image-slider">
                     <div class="slider-container">
-                        <img src="images/doc/1.png" class="active">
-                        <img src="images/doc/2.jpg" >
-                        <img src="images/doc/3.jpg" >
-                        <img src="images/doc/4.jpg" >
-                        <img src="images/doc/5.jpg" >
-                        <img src="images/doc/6.jpg" >
-                        <img src="images/doc/7.jpg" >
-                        <img src="images/doc/8.jpg" >
-                        <img src="images/doc/9.jpg" >
-                        <img src="images/doc/10.jpg" >
-                        <img src="images/doc/11.jpg" >
-                        <img src="images/doc/12.jpg" >
-                        <img src="images/doc/13.jpg" >
-                        <img src="images/doc/14.jpg" >
-                        <img src="images/doc/15.jpg" >
-                        <img src="images/doc/16.jpg" >
-                        <img src="images/doc/17.jpg" >
-                        <img src="images/doc/18.jpg" >
-                        <img src="images/doc/19.jpg" >
+                        <img src="images/about/1.jpg" class="active">
+                        <img src="images/about/2.jpg" >
+                        <img src="images/about/3.jpg" >
+                        <img src="images/about/4.jpg" >
+                        <img src="images/about/5.jpg" >
+                        <img src="images/about/6.jpg" >
+                        <img src="images/about/7.jpg" >
+                        <img src="images/about/8.jpg" >
                     </div>
                     <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
                     <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
                 </div>
-            </div>
-        </section>
-
-        <!-- قسم الاعتمادات -->
-        <section id="accreditation" class="section">
-            <div class="container">
-                <h2>الاعتمادات الرسمية</h2>
-                <div class="accreditation-slider">
-                    <div class="slider-container">
-                        <img src="images/pap/1.jpg"  class="active">
-                        <img src="images/pap/2.jpg" >
-                        <img src="images/pap/3.jpg" >
-                        <img src="images/pap/4.jpg" >
-                        <img src="images/pap/5.jpg" >
-                        <img src="images/pap/6.jpg" >
-                        <img src="images/pap/7.jpg" >
-                        <img src="images/pap/8.jpg" >
-                        <img src="images/pap/9.jpg" >
-                        <img src="images/pap/10.jpg" >
-                        <img src="images/pap/11.jpg" >
-                        <img src="images/pap/12.jpg" >
-                        <img src="images/pap/13.jpg" >
-                        <img src="images/pap/14.jpg" >
-                        <img src="images/pap/15.jpg" >
-                        <img src="images/pap/16.jpg" >
-                        <img src="images/pap/17.jpg" >
-                        <img src="images/pap/18.jpg" >
-                        <img src="images/pap/19.jpg" >
-                        <img src="images/pap/20.jpg" >
-                        <img src="images/pap/21.jpg" >
-                        <img src="images/pap/22.jpg" >
-                        <img src="images/pap/23.jpg" >
-                    </div>
-                    <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+                <div class="about-text">
+                    <p>تأسس مصنع الزخرف للحديد في عام 1995، ونحن نفتخر بأننا من الرواد في مجال صناعة الحديد والمنتجات المعدنية في المنطقة. نقدم منتجات عالية الجودة تلبي أعلى المعايير الدولية.</p>
+                    <p>بخبرة تزيد عن ربع قرن، استطعنا بناء سمعة ممتازة في السوق المحلي والدولي، حيث نلتزم بالجودة والدقة في كل منتج نقدمه لعملائنا الكرام.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- قسم مشاريعنا -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>مشاريعنا</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <img src="images/project/1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+    <!-- قسم الوثائق -->
+    <section id="documents" class="section">
+        <div class="container">
+            <h2>الوثائق الرسمية</h2>
+            <div class="documents-slider">
+                <div class="slider-container">
+                    <img src="images/doc/1.png" class="active">
+                    <img src="images/doc/2.jpg" >
+                    <img src="images/doc/3.jpg" >
+                    <img src="images/doc/4.jpg" >
+                    <img src="images/doc/5.jpg" >
+                    <img src="images/doc/6.jpg" >
+                    <img src="images/doc/7.jpg" >
+                    <img src="images/doc/8.jpg" >
+                    <img src="images/doc/9.jpg" >
+                    <img src="images/doc/10.jpg" >
+                    <img src="images/doc/11.jpg" >
+                    <img src="images/doc/12.jpg" >
+                    <img src="images/doc/13.jpg" >
+                    <img src="images/doc/14.jpg" >
+                    <img src="images/doc/15.jpg" >
+                    <img src="images/doc/16.jpg" >
+                    <img src="images/doc/17.jpg" >
+                    <img src="images/doc/18.jpg" >
+                    <img src="images/doc/19.jpg" >
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاعتمادات -->
+    <section id="accreditation" class="section">
+        <div class="container">
+            <h2>الاعتمادات الرسمية</h2>
+            <div class="accreditation-slider">
+                <div class="slider-container">
+                    <img src="images/pap/1.jpg"  class="active">
+                    <img src="images/pap/2.jpg" >
+                    <img src="images/pap/3.jpg" >
+                    <img src="images/pap/4.jpg" >
+                    <img src="images/pap/5.jpg" >
+                    <img src="images/pap/6.jpg" >
+                    <img src="images/pap/7.jpg" >
+                    <img src="images/pap/8.jpg" >
+                    <img src="images/pap/9.jpg" >
+                    <img src="images/pap/10.jpg" >
+                    <img src="images/pap/11.jpg" >
+                    <img src="images/pap/12.jpg" >
+                    <img src="images/pap/13.jpg" >
+                    <img src="images/pap/14.jpg" >
+                    <img src="images/pap/15.jpg" >
+                    <img src="images/pap/16.jpg" >
+                    <img src="images/pap/17.jpg" >
+                    <img src="images/pap/18.jpg" >
+                    <img src="images/pap/19.jpg" >
+                    <img src="images/pap/20.jpg" >
+                    <img src="images/pap/21.jpg" >
+                    <img src="images/pap/22.jpg" >
+                    <img src="images/pap/23.jpg" >
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مشاريعنا -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>مشاريعنا</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="images/project/1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/2-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/2-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/2-2.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/2-2.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/3-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/3-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/3.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/3.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/4.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/4.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/5-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/5-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/5-2.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/5-2.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/6-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/6-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/7-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/7-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/8-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/8-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/9-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/9-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/10-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/10-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/11-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/11-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/12-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/12-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/13-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/13-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/14-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/14-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/15-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/15-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/16-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/16-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/16-2.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/16-2.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/17-1.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/17-1.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
-                    <div class="project-item">
-                        <img src="images/project/17-2.jpg">
-                        <div class="project-overlay">
-                            
-                        </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project/17-2.jpg">
+                    <div class="project-overlay">
+                        
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- تذييل الصفحة -->
+    <!-- تذييل الصفحة من v1 -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -295,5 +326,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    
 </body>
 </html>
